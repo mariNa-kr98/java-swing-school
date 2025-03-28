@@ -66,7 +66,7 @@ public class TeacherView extends JFrame {
 		}
 	});
 	
-		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 753, 664);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -205,8 +205,8 @@ public class TeacherView extends JFrame {
 		JButton btnNewButton = new JButton("Κλείσιμο");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				Main.getViewTeachersPage().setEnabled(true);
 				Main.getTeacherView().setVisible(false);
-				Main.getDashboard().setEnabled(true);
 				}
 		});
 		

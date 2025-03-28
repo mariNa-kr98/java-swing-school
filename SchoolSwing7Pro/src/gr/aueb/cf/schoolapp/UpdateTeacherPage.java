@@ -44,7 +44,6 @@ private JTextField zipcodeText;
 private JLabel errorFirstname;
 private JLabel errorLastname;
 private JComboBox<City> cityComboBox;
-//private JComboBox<City> cityComboBox;
 private List<City> cities = new ArrayList<>();
 
 public UpdateTeacherPage() {addWindowListener(new WindowAdapter() {
@@ -334,8 +333,8 @@ contentPane.add(insertBtn);
 JButton closeBtn = new JButton("Κλείσιμο");
 closeBtn.addActionListener(new ActionListener() {
 	public void actionPerformed(ActionEvent e) {
+		Main.getViewTeachersPage().setEnabled(true);
 		Main.getUpdateTeacherPage().setVisible(false);
-		Main.getDashboard().setEnabled(true);
 	}
 });
 
