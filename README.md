@@ -1,5 +1,5 @@
 # java-swing-school
-A mockup example of a gov.gr school application regarding CRUD operations (Create, Read, Update, and Delete) about teachers's personal information.
+A mockup example of a gov.gr school application regarding CRUD operations (Create, Read, Update, and Delete) about teachers's personal information (fake data in the example bellow).
 
 The first screen informs about needing username and password and the user has to click the checkbox in order for the
 green button to be clickable and get them to the next screen.
